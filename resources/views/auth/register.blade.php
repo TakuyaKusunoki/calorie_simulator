@@ -30,7 +30,10 @@
                 </div>
                 
                 <div class="form-group">
-                    <input name="type" placeholder="" type="hidden" value="user">
+                  
+                    {!! Form::label('type', 'Type') !!}
+                    {!! Form::select('type', ['user' => 'user', 'root' => 'root',]) !!}
+                    
                 </div>
 
                 {!! Form::submit('Sign up', ['class' => 'btn btn-primary btn-block']) !!}
