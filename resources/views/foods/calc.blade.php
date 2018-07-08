@@ -11,7 +11,6 @@
                         <th>開始日</th>
                         <th>終了日</th>
                         <th>合計摂取カロリー(kcal)</th>
-                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -21,7 +20,6 @@
                         <td>{{ $start_date }}</td>
                         <td>{{ $end_date }}</td>
                         <td>{{ $calorie->sum }}</td>
-                        <td>{!! Form::submit('csvダウンロード', ['class' => 'btn btn-xs btn-default']) !!}</td>
                     </tr>
                     @endforeach
                 </tbody>
